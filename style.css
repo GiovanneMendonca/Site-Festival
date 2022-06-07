@@ -1,0 +1,170 @@
+* {
+    font-family: sans-serif;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+}
+
+
+
+
+/* Titulo principal */
+header {
+    margin-top: 5px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-image: url(img/imgTitulo.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header h1 {
+    padding-top: 25px;
+}
+
+header img {
+    max-width: 80%;
+}
+
+/*Main*/
+.comprar-ingresso h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.comprar-ingresso p {
+    padding: 5px 10px;
+}
+
+/*Botao de compra*/
+
+.botao {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.botao button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(63, 153, 156);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.botao button a {
+    text-decoration: none;
+    color: white;
+}
+
+.botao button:hover{
+    background-color: rgb(84, 193, 111);
+}
+
+/* Atrações */
+.div-atracoes h2 {
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+section .atracoes {
+    width: 25%;
+    height: 300px;
+    border: solid 1px black;
+    padding-left: 20px;
+    border-radius: 8px;
+}
+
+.atracoes h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.atracoes ul li {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+/*Rodape*/
+.copyright {
+    background-color: rgb(47, 42, 42);
+    color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width: 470px) {
+    header {
+        width: 100%;
+        height: 170px;
+        min-width: 300px;
+    }
+
+    .comprar-ingresso h3 {
+        font-size: 20px;
+    }
+
+    .comprar-ingresso p {
+        font-size: 15px;
+        padding: 5px 10px;
+        font-style: italic;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .atracoes {
+        width: 75%;
+        margin: 10px 0;
+
+    }
+
+
+}
+
+@media(max-width: 500px) {
+    .atracoes h3 {
+        font-size: 20px;
+
+    }
+
+    .atracoes ul li {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .atracoes h3 {
+        font-size: 20px;
+
+    }
+
+    .atracoes ul li {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+}
